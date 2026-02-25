@@ -64,5 +64,5 @@ class DCGAN(BaseGAN):
                           betas=[0.5, 0.999], lr=self.config.learningRate)
 
     def getSize(self):
-        size = 2**(self.config.depth + 3)
+        size = 2**(self.config.depth + 4)
         return (size, size)
